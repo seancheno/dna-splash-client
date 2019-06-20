@@ -1,0 +1,7 @@
+.AnimalBox {
+	width: 85vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}

@@ -1,0 +1,108 @@
+.AnimalInfo {
+	position: fixed;
+	color: red;
+	/* background-color: rgb(245, 245, 248); */
+	width: 564px;
+	height: 20vw;
+	top: 30%;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.InnerWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* height: 100% */
+}
+
+.LeftCol {
+	flex: 1 0 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.RightCol {
+	flex: 2.5 0 0;
+	/* flex: 2.5 0 0; background:yellow; */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Open {
+	opacity: 1;
+	transform: translate(300px, 0px) scale(1);
+	animation: show 0.5s;
+}
+
+@media (max-width: 1200px) {
+	.Open {
+		transform: translate(270px, 0px) scale(0.8);
+	}
+}
+
+@media (max-width: 800px) {
+	.Open {
+		transform: translate(220px, 0px) scale(0.8);
+	}
+}
+
+@media (max-width: 600px) {
+	.Open {
+		transform: translate(0px, 0px) scale(0.8);
+		position: absolute;
+		width: 100%;
+		margin-left: 10vw;
+		top: 16%;
+	}
+}
+
+@media (max-width: 414px) {
+	.Open {
+		transform: translate(-9px, 0px) scale(0.9);
+		margin: -6vw 2vw 0 2vw;
+	}
+}
+
+.Close {
+	opacity: 0;
+	transform: translateX(840px);
+	animation: hide 0.2s;
+}
+
+.SpeciesText {
+	color: rgb(64, 64, 64);
+	width: 100%;
+	font-size: 30px;
+	font-style: oblique;
+	font-weight: 100;
+}
+
+@media (max-width: 414px) {
+	.SpeciesText {
+		margin-top: 10px;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+	}
+}
+
+@keyframes hide {
+	0% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+	}
+}

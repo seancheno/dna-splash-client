@@ -1,0 +1,117 @@
+/* human */
+.hm0{fill:#FAC929;}
+.hm1{fill:#92CFCC;}
+.hm2{fill:#EC8C24;}
+.hm3{fill:#C7DB5A;}
+.hm4{fill:#F9C92C;}
+
+/* panda */
+.pd0{fill:#FDF3D3;}
+.pd1{fill:#345763;}
+.pd2{fill:#F9E8AC;}
+.pd3{fill:#0E252F;}
+.pd4{fill:#6C8F9C;}
+.pd5{fill:#FEFEFE;}
+
+/* turtle */
+.tt0{fill:#8CCB91;}
+.tt1{fill:#55BD94;}
+.tt2{fill:#BCDB8F;}
+.tt3{fill:#F6D870;}
+.tt4{fill:#588C76;}
+
+/* cat */
+.ct0{fill:#365964;}
+.ct1{fill:#6C909C;}
+.ct2{fill:#0F2630;}
+.ct3{fill:#F7E9B6;}
+.ct4{fill:#144057;}
+
+/* dog */
+.dg0{fill:#905645;}
+.dg1{fill:#0E252F;}
+.dg2{fill:#F9B073;}
+.dg3{fill:#A66D5A;}
+.dg4{fill:#FFFFFE;}
+
+/* dolphin */
+.dp0{fill:#5BCBF5;}
+.dp1{fill:#A0DDF6;}
+.dp2{fill:#1DA5D9;}
+.dp3{fill:#2BA7DA;}
+/* monkey */
+.mk0{fill:#7B5D5B;}
+.mk1{fill:#9B918E;}
+.mk2{fill:#E6D6A3;}
+.mk3{fill:#916366;}
+.mk4{fill:#A0656A;}
+
+/* lion */
+.ln0{fill:#F15B5B;}
+.ln1{fill:#F58361;}
+.ln2{fill:#FAB073;}
+.ln3{fill:#F58865;}
+.ln4{fill:#FDC995;}
+
+/* gorilla */
+.gr0{fill:#0D252F;}
+.gr1{fill:#365964;}
+.gr2{fill:#6B8F9C;}
+.gr3{fill:#3A5A66;}
+
+/* elephant */
+.ep0{fill:#6B8F9C;}
+.ep1{fill:#355864;}
+.ep2{fill:#102630;}
+.ep3{fill:#F4D771;}
+
+
+
+
+
+.DrawWrapper path {
+    stroke-dasharray: 370 370;
+    stroke-dashoffset: 370;
+    stroke:#555555;
+    stroke-width: 1;
+    animation: draw 4s linear;
+    transition: .5s ease;
+
+  }
+      
+  .DrawWrapper path:hover { 
+    opacity:.5;
+    animation: hover 1s ease infinite; 
+}
+
+.ShakeWrapper path {
+  }
+      
+  .ShakeWrapper path:hover { 
+    animation: shake .5s linear;
+}
+
+
+@keyframes shake {
+    0% { transform:translateX(0px) }
+    20% { transform:translateX(3px)}
+    40% { transform:translateX(-3px)}
+    60% { transform:translateX(2px)}
+    80% { transform:translateX(-2px)}
+    100% { transform:translateX(0px)}
+}
+
+
+@keyframes draw {
+    0% { fill:rgb(255, 255, 255); }
+    60% { stroke-dashoffset: 100; fill:rgb(255, 255, 255);}
+    80% { stroke-dashoffset: 100; fill:rgb(255, 255, 255);}
+    100% { stroke-dashoffset: 100; stroke-width: .01}
+}
+
+@keyframes hover {
+    0% { transform: scale(1, 1); }
+    50% { transform: scale(1, 1); }
+    100% { transform: scale(1, 1); }
+} 
+

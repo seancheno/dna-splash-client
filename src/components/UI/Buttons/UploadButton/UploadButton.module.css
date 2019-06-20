@@ -1,0 +1,14 @@
+.UploadButton {
+	width: 50%;
+	padding: 3%;
+	margin: 2%;
+	background-color: rgb(245, 62, 62);
+	color: white;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.UploadButton:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.ImageBox {
+	/* background-color: rgb(221, 220, 241); */
+	height: 100%;
+	width: 39%;
+	margin: 27px 0px;
+}
+
+@media (max-width: 760px) {
+	.ImageBox {
+		width: 100%;
+	}
+}
+
+.ImageBox button {
+	width: 50%;
+	height: 45px;
+	margin: 2%;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 8px;
+	transition: 0.5s ease;
+}
+
+.ImageBox button:hover {
+	opacity: 0.8;
+	transform: scale(0.97);
+}
+
+.ButtonWrap {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	height: 100%;
+	margin-top: 15px;
+	transform: scale(1.04);
+}
+
+.GenerateButton {
+	background-color: rgb(245, 62, 62);
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.DownloadButton {
+	background-color: rgb(255, 255, 255);
+	color: rgb(92, 92, 92);
+	border: rgb(214, 214, 214) solid 1px;
+	cursor: not-allowed;
+}
+
+.Active {
+	transition: 1s ease;
+	color: white;
+	background-color: #78c3ef;
+	border: none;
+	cursor: pointer;
+}
+
+.Active a {
+	color: white;
+}
+
+.GifLoader {
+	height: 21.5vw;
+	margin-left: 17%;
+	animation: slide-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (max-width: 760px) {
+	.GifLoader {
+		height: 207px;
+		margin-left: 21%;
+	}
+}
+
+@keyframes slide-fwd {
+	0% {
+		opacity: 0;
+		transform: scale(0.4);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,55 @@
+.Controls {
+	height: 100px;
+	width: 54%;
+	height: 100%;
+}
+
+@media (max-width: 760px) {
+	.Controls {
+		width: 100%;
+	}
+}
+
+.Controls h1 {
+	margin: 5px;
+	font-size: 2.4vw;
+	font-weight: 300;
+	color: #272727;
+}
+
+@media (max-width: 760px) {
+	.Controls h1 {
+		display: flex;
+		flex-direction: column;
+		font-size: 8.6vw;
+	}
+}
+
+.Controls span {
+	font-size: 1.4vw;
+	margin-left: 1%;
+	color: #b5b5b5;
+}
+
+@media (max-width: 760px) {
+	.Controls span {
+		font-size: 5.3vw;
+		margin-bottom: 5px;
+	}
+}
+
+.ColorWrap {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	height: 100%;
+	margin-bottom: -6px;
+}
+
+.ImageDimWrap {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 100%;
+}

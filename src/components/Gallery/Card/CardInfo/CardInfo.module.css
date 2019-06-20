@@ -1,0 +1,86 @@
+.CardInfo {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 17%;
+	padding-top: 4px;
+	position: absolute;
+	bottom: -3.6vw;
+	left: 0;
+	transition: all 0.2s ease-out;
+}
+
+@media (max-width: 735px) {
+	.CardInfo {
+		width: 100%;
+		bottom: -1vw;
+		font-size: 15px;
+	}
+}
+
+.Active {
+	bottom: 0%;
+}
+
+.CardInfo h2 {
+	margin: 2px;
+	font-weight: 700;
+	font-size: 15px;
+	color: #b5b5b5;
+}
+
+.CardInfo h3 {
+	margin: 2px;
+	font-size: 10px;
+	font-weight: 500;
+	color: #d4d4d4;
+}
+
+.ColorWrapper {
+	display: flex;
+	width: 20%;
+	justify-content: space-between;
+	margin: 2.5% 12% 2.5% 0%;
+}
+
+@media (max-width: 735px) {
+	.ColorWrapper {
+		width: 92px;
+		margin: 4% 20% 0.5% 11%;
+	}
+}
+
+.Color {
+	width: 0.7vw;
+	height: 0.7vw;
+	border-radius: 50%;
+	background-color: blue;
+	margin-top: 10%;
+}
+
+@media (max-width: 735px) {
+	.Color {
+		width: 10px;
+		height: 10px;
+		margin-top: 0%;
+	}
+}
+
+.CardInfo button {
+	width: 8vw;
+	margin: 4px;
+	padding: 0px 3%;
+	color: #cfcfcf;
+	font-size: 8px;
+	font-weight: 700;
+	background-color: white;
+	border: 1px #f5f5f5 solid;
+	border-radius: 6px;
+}
+
+@media (max-width: 735px) {
+	.CardInfo button {
+		width: 15vw;
+	}
+}

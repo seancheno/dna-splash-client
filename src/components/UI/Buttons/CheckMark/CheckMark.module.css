@@ -1,0 +1,66 @@
+.Wrapper {
+	position: relative;
+	width: 180px;
+	height: 80px;
+	margin-top: 220px;
+	margin-left: -30px;
+	overflow: hidden;
+}
+
+.Container {
+	width: 200px;
+	position: absolute;
+	overflow: hidden;
+	padding: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 10px;
+	border-top: 0.8px #dadada solid;
+	border-bottom: 0.8px #dadada solid;
+	transition: margin 0.5s;
+	cursor: pointer;
+}
+
+.Text {
+	margin: 14px auto 0 auto;
+	width: 160px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: #444;
+	font-style: italic;
+	float: left;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 22px;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.Arrow {
+	font-size: 40px;
+	float: left;
+	width: 40px;
+	margin: auto;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.Wrapper:hover {
+	cursor: pointer;
+}
+
+.Container:hover {
+	border: none;
+}
+
+.Wrapper:hover .Container {
+	margin: 0 -120px;
+}
+.Wrapper:hover .Text {
+	opacity: 0;
+}
+.Wrapper:hover .Arrow {
+	opacity: 1;
+}

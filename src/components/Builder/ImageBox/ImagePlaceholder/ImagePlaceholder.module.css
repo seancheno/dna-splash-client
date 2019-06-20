@@ -1,0 +1,26 @@
+.ImagePlaceholder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(245, 245, 245);
+	height: 22vw;
+}
+
+@media (max-width: 760px) {
+	.ImagePlaceholder {
+		height: 207px;
+	}
+}
+
+.Text {
+	font-size: 4.5vw;
+	color: white;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+@media (max-width: 760px) {
+	.Text {
+		font-size: 13.5vw;
+	}
+}

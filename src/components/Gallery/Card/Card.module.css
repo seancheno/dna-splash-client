@@ -1,0 +1,38 @@
+.Card {
+	position: relative;
+	overflow: hidden;
+	width: 28.2vw;
+	height: 21vw;
+	background-color: rgb(136, 175, 233);
+	margin: 0.8vw;
+	border: 0.6vw white solid;
+	box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+	.Card {
+		width: 27.7vw;
+	}
+}
+
+@media (max-width: 735px) {
+	.Card {
+		width: 40.7vw;
+		height: 30vw;
+	}
+}
+
+@media (max-width: 590px) {
+	.Card {
+		width: 80vw;
+		height: 59vw;
+	}
+}
+
+@media (max-width: 414px) {
+	.Card {
+		width: 91vw;
+		margin-left: -17px;
+		height: 65vw;
+	}
+}

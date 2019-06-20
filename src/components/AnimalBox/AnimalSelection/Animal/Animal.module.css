@@ -1,0 +1,67 @@
+.Animal {
+	margin: 10px 1.5%;
+	text-align: center;
+	transition: 0.25s ease;
+	height: 100%;
+}
+
+.Close {
+	width: 16%;
+}
+
+@media (max-width: 768px) {
+	.Close {
+		width: 29%;
+	}
+}
+
+@media (max-width: 414px) {
+	.Close {
+		width: 28%;
+	}
+}
+
+.Open {
+	width: 17%;
+}
+
+@media (max-width: 970px) {
+	.Open {
+		width: 14%;
+	}
+}
+
+@media (max-width: 414px) {
+	.Open {
+		width: 20%;
+	}
+}
+
+.Animal:hover {
+	transition: 0.5s ease;
+	transform: scale(1.3, 1.3);
+}
+
+.BackButton {
+	position: absolute;
+	width: 2vw;
+	height: 2vw;
+	left: 0vw;
+	top: 4vw;
+	border-radius: 50%;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
+.BackButton:hover {
+	transform: scale(1.04);
+	opacity: 0.8;
+}
+
+.BackButtonHidden {
+	opacity: 0;
+}
+
+.BackArrow {
+	opacity: 1;
+}

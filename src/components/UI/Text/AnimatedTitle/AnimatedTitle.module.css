@@ -1,0 +1,20 @@
+.AnimatedTitle {
+	color: rgb(24, 24, 24);
+	width: 100%;
+	font-size: 53px;
+	font-family: "Montserrat";
+	font-weight: 100;
+	text-align: center;
+	line-height: 1.1;
+}
+
+@media (max-width: 540px) {
+	.AnimatedTitle {
+		display: flex;
+		flex-direction: column;
+		text-align: center !important;
+		margin-top: -7px;
+		font-size: 73px;
+		margin: 10px 0px;
+	}
+}

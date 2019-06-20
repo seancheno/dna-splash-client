@@ -1,0 +1,10 @@
+.rc-slider-tooltip-inner {
+	padding: 5px 10px;
+	height: 31px;
+	font-size: 17px;
+	color: #ababab;
+	background-color: #ffffff;
+	border: 1px solid #dadada;
+	border-radius: 6px;
+	box-shadow: none;
+}

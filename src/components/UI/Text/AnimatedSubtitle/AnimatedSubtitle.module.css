@@ -1,0 +1,14 @@
+.AnimatedSubtitle {
+	color: rgb(123, 123, 123);
+	width: 100%;
+	font-size: 27px;
+	font-family: "Montserrat";
+	font-weight: 100;
+	text-align: center;
+}
+
+@media (max-width: 540px) {
+	.AnimatedSubtitle {
+		font-size: 18px;
+	}
+}

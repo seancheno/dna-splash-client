@@ -1,0 +1,53 @@
+.Builder {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 100%;
+	width: 85vw;
+	animation: show 0.4s ease-in-out;
+}
+.Wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 760px) {
+	.Builder {
+		flex-direction: column;
+	}
+}
+
+.AnimalWrapper {
+	width: 7%;
+	margin-top: -25px;
+	animation: expand 0.4s ease-in-out;
+}
+
+@media (max-width: 760px) {
+	.AnimalWrapper {
+		width: 18%;
+		margin-top: 0px;
+		align-self: center;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translateY(15px);
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
+@keyframes expand {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 100;
+	}
+}

@@ -1,0 +1,21 @@
+.AnimalSelection {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vw;
+}
+
+@media (max-width: 1120px) {
+	.AnimalSelection {
+		width: 90vw;
+	}
+}
+
+.Open {
+	margin: 1% 1% 35% 1%;
+}
+
+@media (max-width: 414px) {
+	.Open {
+		margin: 1% 1% -40% 1%;
+	}
+}

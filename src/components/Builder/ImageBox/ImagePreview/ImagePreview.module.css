@@ -1,0 +1,32 @@
+.ImagePreview {
+	opacity: 0;
+	height: 22vw;
+	animation: fade-in ease-in-out forwards;
+	animation-duration: 1s;
+	animation-delay: 0.4s;
+	overflow: hidden;
+}
+
+@media (max-width: 760px) {
+	.ImagePreview {
+		height: 207px;
+	}
+}
+
+.ImgsViewerWrapper {
+	opacity: 1;
+}
+
+.ZoomImage {
+	height: 30vw;
+}
+
+@keyframes fade-in {
+	0% {
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}

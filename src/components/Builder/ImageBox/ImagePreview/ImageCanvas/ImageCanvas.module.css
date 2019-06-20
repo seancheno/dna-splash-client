@@ -1,0 +1,102 @@
+.ImageCanvas {
+	width: 100%;
+	height: 22vw;
+	animation: fade-in 0.4s ease-in-out;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.ZoomOverlay {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.13);
+	width: 33.2%;
+	height: 22vw;
+	animation: fade-in 0.3s ease-in-out;
+}
+
+.ZoomIcon {
+	opacity: 0.3;
+	animation: fade-in-bounce 0.6s ease-in-out;
+	margin: auto;
+	top: 30%;
+	opacity: 0.3;
+	font-size: 10em;
+	width: 5vw;
+	height: 5vw;
+	border: 1vw solid rgb(255, 255, 255);
+	position: relative;
+	border-radius: 0.35em;
+	transition: 0.6s ease;
+}
+
+.ZoomIcon::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: -3.3vw;
+	bottom: -1.8vw;
+	border-width: 0;
+	background: rgb(255, 255, 255);
+	width: 4vw;
+	height: 1vw;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.ZoomIcon:hover {
+	transform: scale(1.05);
+}
+
+.ButtonWrapper button {
+	width: 17%;
+	height: 2.5vw;
+	margin: 10px 5px;
+
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 3px;
+	text-align: center;
+	color: rgb(155, 155, 155);
+	color: rgb(191, 191, 191);
+	font-size: 10px;
+}
+
+.ButtonWrapper button:hover {
+	background-color: #f8f8f8;
+	transform: scale(1.05);
+}
+
+.Button {
+	background-color: red;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fade-in-bounce {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	50% {
+		opacity: 0.1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 0.3;
+		transform: scale(1);
+	}
+}
