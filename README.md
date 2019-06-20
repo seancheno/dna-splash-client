@@ -17,7 +17,7 @@ Dna Splash allows a user to asign a color value to each of the four base pairs f
 ## Installation
 
     git clone https://github.com/seancheno/dna-splash-client/
-    cd dna-splash
+    cd dna-splash-client
     npm i
     npm run start:dev
     open localhost:8080
